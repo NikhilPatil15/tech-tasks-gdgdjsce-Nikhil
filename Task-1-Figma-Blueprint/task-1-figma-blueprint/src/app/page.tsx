@@ -1,10 +1,12 @@
+import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="w-full h-screen  px-80">
+    <div className="w-full h-screen  px-[312px]">
       <Navbar />
+      <HeroSection />
     </div>
   );
 }
