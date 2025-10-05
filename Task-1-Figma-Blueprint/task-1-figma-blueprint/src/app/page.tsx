@@ -1,12 +1,13 @@
-import HeroSection from "@/components/HeroSection";
-import Navbar from "@/components/Navbar";
-import Image from "next/image";
+import FeaturesSection from "@/components/Home/FeaturesSection";
+import HeroSection from "@/components/Home/HeroSection";
+import StepsSection from "@/components/Home/stepsSection";
 
 export default function Home() {
   return (
-    <div className="w-full h-screen  px-[312px]">
-      <Navbar />
+    <div className="">
       <HeroSection />
+      <FeaturesSection />
+      <StepsSection />
     </div>
   );
 }
