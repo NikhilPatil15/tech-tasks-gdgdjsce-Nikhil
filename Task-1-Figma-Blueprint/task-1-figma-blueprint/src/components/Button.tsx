@@ -5,9 +5,8 @@ export default function Button({
   color,
   textColor,
   textSize,
-  paddingX,
-  paddingY,
   fontWeight,
+  className,
 }: {
   width?: string;
   height?: string;
@@ -15,21 +14,20 @@ export default function Button({
   color: string;
   textColor?: string;
   textSize?: string;
-  paddingX?: string;
-  paddingY?: string;
   fontWeight?: string;
+  className?: string;
 }) {
   return (
     <button
-      className={`${width ? `w-[${width}]` : "w-full"} h-[${
-        height ?? height
-      }] text-[${color}] ${textColor ? `text-[${textColor}]` : "text-white"}  ${
+      className={`${width ? `w-[${width}]` : "w-full"} ${
+        height ? `h-[${height}]` : ""
+      } bg-[${color}] ${textColor ? `text-[${textColor}]` : "text-white"}  ${
         textSize ? `text-[${textSize}]` : "text-[16px]"
-      } ${paddingX ? `px-[${paddingX}]` : "px-2"}  ${
-        paddingY ? `py-[${paddingY}]` : "py-2"
-      } cursor-pointer ${
-        fontWeight ? `font-[${fontWeight}]` : "font-semibold"
-      }   rounded-xl hover:scale-105 transition-all duration-300 `}
+      }  px-2
+        py-2
+       cursor-pointer ${
+         fontWeight ? `font-[${fontWeight}]` : "font-semibold"
+       }   rounded-xl hover:scale-105 transition-all duration-300 ${className}`}
     >
       {text}
     </button>
