@@ -25,7 +25,7 @@ const facts = [
 
 export default function FactsSection() {
   return (
-    <section className="relative bg-[#5937E0] py-16 px-6 md:px-16 rounded-2xl text-center mt-10 overflow-hidden mb-100 h-[486px]">
+    <section className="relative bg-[#5937E0] py-16 px-6 md:px-16 rounded-2xl text-center mt-20 overflow-hidden h-[486px]">
       <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
         Facts In Numbers
       </h2>
