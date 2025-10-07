@@ -1,3 +1,4 @@
+import FactsSection from "@/components/Home/FactsSection";
 import FeaturesSection from "@/components/Home/FeaturesSection";
 import HeroSection from "@/components/Home/HeroSection";
 import SelectCarSection from "@/components/Home/SelectCarSection";
@@ -10,6 +11,7 @@ export default function Home() {
       <FeaturesSection />
       <StepsSection />
       <SelectCarSection />
+      <FactsSection />
     </div>
   );
 }
