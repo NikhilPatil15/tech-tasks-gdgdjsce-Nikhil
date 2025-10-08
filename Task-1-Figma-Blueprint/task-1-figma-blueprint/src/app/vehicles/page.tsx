@@ -1,4 +1,6 @@
 "use client";
+import Card from "@/components/Card";
+import { carDataExtended } from "@/utils/data";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -38,7 +40,7 @@ const list = [
 export default function Page() {
   const [current, setCurrent] = useState("All vehicles");
   return (
-    <div className="mt-20">
+    <div className="mt-20 flex flex-col gap-20">
       <div className="flex flex-col w-full items-center justify-center gap-10">
         <h1 className="font-bold text-[50px] leading-[100%]">
           Select a Vehicle group
@@ -50,7 +52,7 @@ export default function Page() {
                 key={item.index}
                 className={`${
                   item.text === current ? "bg-[#5937E0]" : "bg-[#F9F9F9]"
-                } rounded-3xl cursor-pointer flex gap-2 py-2 px-6 items-center`}
+                } rounded-3xl cursor-pointer flex gap-2 py-2 px-6 items-center transition-all duration-300  `}
                 onClick={() => setCurrent(item.text)}
               >
                 {item.text !== "All vehicles" && (
@@ -72,6 +74,29 @@ export default function Page() {
             );
           })}
         </div>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {carDataExtended.map((car, _) => {
+          return (
+            <Card
+              key={car.index}
+              carType={car.carType}
+              price={car.price}
+              imageUrl={car.imageUrl}
+              title={car.title}
+            />
+          );
+        })}
+      </div>
+      <div className="w-full">
+        <Image
+          src={"/images/vehicles/Logos.svg"}
+          alt={"Logos"}
+          height={400}
+          width={2000}
+          priority
+          className="object-cover inset-0"
+        />
       </div>
     </div>
   );

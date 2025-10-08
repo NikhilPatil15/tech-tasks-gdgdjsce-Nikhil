@@ -1,51 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import { title } from "process";
 import Card, { CarData } from "../Card";
-
-const carData: CarData[] = [
-  {
-    index: 0,
-    title: "Mercedes",
-    imageUrl: "/images/car1.svg",
-    price: 25,
-    carType: "Sedan",
-  },
-  {
-    index: 1,
-    title: "Mercedes",
-    imageUrl: "/images/car2.svg",
-    price: 50,
-    carType: "Sport",
-  },
-  {
-    index: 2,
-    title: "Mercedes",
-    imageUrl: "/images/car3.svg",
-    price: 120,
-    carType: "Sedan",
-  },
-  {
-    index: 3,
-    title: "Porsche",
-    imageUrl: "/images/car4.svg",
-    price: 40,
-    carType: "SUV",
-  },
-  {
-    index: 4,
-    title: "Toyota",
-    imageUrl: "/images/car5.svg",
-    price: 35,
-    carType: "Sedan",
-  },
-  {
-    index: 5,
-    title: "Porsche",
-    imageUrl: "/images/car4.svg",
-    price: 50,
-    carType: "SUV",
-  },
-];
+import { carData } from "@/utils/data";
 
 export default function SelectCarSection() {
   return (
