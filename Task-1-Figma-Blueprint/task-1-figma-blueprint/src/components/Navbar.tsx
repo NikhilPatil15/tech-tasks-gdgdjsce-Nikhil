@@ -19,7 +19,13 @@ export default function Navbar() {
           return (
             <Link
               key={index}
-              href={"/"}
+              href={
+                item === "Vehicles" || "Details"
+                  ? item === "Vehicles"
+                    ? "/vehicles"
+                    : "/car-details"
+                  : "/"
+              }
               className={`text-center text-black  text-lg ${
                 item === "Vehicles" ? "font-bold" : "font-medium"
               }`}

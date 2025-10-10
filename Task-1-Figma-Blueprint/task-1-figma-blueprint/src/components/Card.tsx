@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Button from "./Button";
+import Link from "next/link";
 
 type CarType = "Sedan" | "SUV" | "Sport" | "Pickup" | "Van";
 
@@ -61,11 +62,13 @@ export default function Card({
           </span>
         </div>
       </div>
-      <Button
-        text="View Details"
-        color="#5937E0"
-        className="mt-4 rounded-xl px-[28px] py-[13px]"
-      />
+      <Link href={"/car-details"}>
+        <Button
+          text="View Details"
+          color="#5937E0"
+          className="mt-4 rounded-xl px-[28px] py-[13px]"
+        />
+      </Link>
     </div>
   );
 }

@@ -88,11 +88,11 @@ export default function Page() {
           );
         })}
       </div>
-      <div className="w-full">
+      <div className="w-full flex items-centern justify-center">
         <Image
           src={"/images/vehicles/Logos.svg"}
           alt={"Logos"}
-          height={400}
+          height={1000}
           width={2000}
           priority
           className="object-cover inset-0"
