@@ -45,7 +45,7 @@ export default function Card({
         <div className="flex justify-between w-full">
           <span className="flex items-center gap-1 text-[#00000099] text-[16px] leading-[100%]">
             <Image
-              src={"/images/gear-Shift.svg"}
+              src={"/Images/gear-Shift.svg"}
               alt="Automatic"
               height={24}
               width={24}
@@ -53,11 +53,11 @@ export default function Card({
             Automat
           </span>
           <span className="flex items-center gap-2">
-            <Image src={"/images/fuel.svg"} alt="Fuel" height={24} width={24} />{" "}
+            <Image src={"/Images/fuel.svg"} alt="Fuel" height={24} width={24} />{" "}
             PB 95
           </span>
           <span className="flex items-center gap-2">
-            <Image src={"/images/ac.svg"} alt="AC" height={24} width={24} /> Air
+            <Image src={"/Images/ac.svg"} alt="AC" height={24} width={24} /> Air
             Conditioner
           </span>
         </div>

@@ -50,7 +50,7 @@ export default function Footer() {
       <div className="flex justify-between items-center">
         <div className="flex items-center justify-center">
           <Image
-            src="/images/Logo/Logo.svg"
+            src="/Images/Logo/Logo.svg"
             alt="Car rental logo"
             width={180}
             height={50}
@@ -124,14 +124,14 @@ export default function Footer() {
         <div className="flex flex-col gap-6  items-start ml-10">
           <h4 className="font-semibold text-[20px]">Download App</h4>
           <Image
-            src={"/images/AppStore.svg"}
+            src={"/Images/AppStore.svg"}
             alt="App Store"
             height={50}
             width={180}
             className="cursor-pointer"
           />
           <Image
-            src={"/images/GooglePlay.svg"}
+            src={"/Images/GooglePlay.svg"}
             alt="App Store"
             height={50}
             width={180}

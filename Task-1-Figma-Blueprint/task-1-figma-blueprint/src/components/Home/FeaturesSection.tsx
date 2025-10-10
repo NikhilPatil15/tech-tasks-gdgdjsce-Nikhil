@@ -9,21 +9,21 @@ type Feature = {
 const featuresList: Feature[] = [
   {
     index: 0,
-    icon: "/images/feature1.svg",
+    icon: "/Images/feature1.svg",
     title: "Availability",
     description:
       "Diam tincidunt tincidunt erat at semper fermentum. Id ultricies quis",
   },
   {
     index: 1,
-    icon: "/images/feature2.svg",
+    icon: "/Images/feature2.svg",
     title: "Comfort",
     description:
       "Gravida auctor fermentum morbi vulputate ac egestas orcietium convallis",
   },
   {
     index: 2,
-    icon: "/images/feature3.svg",
+    icon: "/Images/feature3.svg",
     title: "Savings",
     description:
       "Pretium convallis id diam sed commodo vestibulum lobortis volutpat",

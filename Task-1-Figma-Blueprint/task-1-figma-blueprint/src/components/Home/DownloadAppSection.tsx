@@ -16,13 +16,13 @@ export default function DownloadAppSection() {
         </p>
         <div className="flex gap-4">
           <Image
-            src={"/images/AppStore.svg"}
+            src={"/Images/AppStore.svg"}
             alt="App Store"
             height={50}
             width={180}
           />
           <Image
-            src={"/images/GooglePlay.svg"}
+            src={"/Images/GooglePlay.svg"}
             alt="Play Store"
             height={50}
             width={180}
@@ -31,7 +31,7 @@ export default function DownloadAppSection() {
       </div>
       <div>
         <Image
-          src={"/images/mobiles.svg"}
+          src={"/Images/mobiles.svg"}
           alt="devices"
           height={601}
           width={401}

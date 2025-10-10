@@ -2,22 +2,22 @@ import Image from "next/image";
 
 const facts = [
   {
-    img: "/images/fact1.svg",
+    img: "/Images/fact1.svg",
     value: "540+",
     label: "Cars",
   },
   {
-    img: "/images/fact2.svg",
+    img: "/Images/fact2.svg",
     value: "20k+",
     label: "Customers",
   },
   {
-    img: "/images/fact3.svg",
+    img: "/Images/fact3.svg",
     value: "25+",
     label: "Years",
   },
   {
-    img: "/images/fact4.svg",
+    img: "/Images/fact4.svg",
     value: "20m+",
     label: "Miles",
   },
@@ -36,7 +36,7 @@ export default function FactsSection() {
       </p>
       <div className="absolute left-0 top-0 z-0 pointer-events-none">
         <Image
-          src="/images/tyreMark.svg"
+          src="/Images/tyreMark.svg"
           alt="Grip texture"
           width={600}
           height={167}
@@ -46,7 +46,7 @@ export default function FactsSection() {
 
       <div className="absolute inset-0 flex justify-center items-center opacity-30 brightness-10">
         <Image
-          src="/images/car1.svg"
+          src="/Images/car1.svg"
           alt="Car background"
           width={700}
           height={300}

@@ -6,7 +6,7 @@ export default function SearchSection() {
     <section className="relative bg-[#6b32f4] rounded-2xl py-16 px-8 md:px-16 overflow-hidden mt-10 text-white">
       <div className="absolute inset-0  top-5">
         <Image
-          src="/images/searchTyreMark.svg"
+          src="/Images/searchTyreMark.svg"
           alt="Grip texture"
           width={600}
           height={600}
@@ -15,7 +15,7 @@ export default function SearchSection() {
 
       <div className="absolute right-40 bottom-0 hidden md:block ">
         <Image
-          src="/images/searchCar.svg"
+          src="/Images/searchCar.svg"
           alt="Car"
           width={380}
           height={380}

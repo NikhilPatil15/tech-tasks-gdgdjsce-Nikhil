@@ -8,32 +8,32 @@ const list = [
   {
     index: 0,
     text: "All vehicles",
-    imageUrl: "/images/vehicles/",
+    imageUrl: "/Images/vehicles/",
   },
   {
     index: 1,
     text: "Sedan",
-    imageUrl: "/images/vehicles/sedan.svg",
+    imageUrl: "/Images/vehicles/sedan.svg",
   },
   {
     index: 2,
     text: "Cabriolet",
-    imageUrl: "/images/vehicles/cabriolet.svg",
+    imageUrl: "/Images/vehicles/cabriolet.svg",
   },
   {
     index: 3,
     text: "Pickup",
-    imageUrl: "/images/vehicles/pickup.svg",
+    imageUrl: "/Images/vehicles/pickup.svg",
   },
   {
     index: 4,
     text: "Suv",
-    imageUrl: "/images/vehicles/suv.svg",
+    imageUrl: "/Images/vehicles/suv.svg",
   },
   {
     index: 5,
     text: "Minivan",
-    imageUrl: "/images/vehicles/minivan.svg",
+    imageUrl: "/Images/vehicles/minivan.svg",
   },
 ];
 
@@ -90,7 +90,7 @@ export default function Page() {
       </div>
       <div className="w-full flex items-centern justify-center">
         <Image
-          src={"/images/vehicles/Logos.svg"}
+          src={"/Images/vehicles/Logos.svg"}
           alt={"Logos"}
           height={1000}
           width={2000}

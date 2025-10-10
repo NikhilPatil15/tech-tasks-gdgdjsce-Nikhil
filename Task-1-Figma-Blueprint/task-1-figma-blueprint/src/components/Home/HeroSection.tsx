@@ -5,7 +5,7 @@ export default function HeroSection() {
   return (
     <section className="w-full h-[680px] bg-[#5937E0]  rounded-4xl relative">
       <Image
-        src="/images/tyrebg.svg"
+        src="/Images/tyrebg.svg"
         alt="Tyre background"
         width={1200}
         height={680}
@@ -15,7 +15,7 @@ export default function HeroSection() {
 
       <div className="absolute inset-0 bg-primary/80" aria-hidden="true" />
       <Image
-        src="/images/car_bg.svg"
+        src="/Images/car_bg.svg"
         alt="Car background"
         width={700}
         height={420}

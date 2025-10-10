@@ -10,28 +10,28 @@ type Step = {
 const steps: Step[] = [
   {
     index: 0,
-    icon: "/images/step1.svg",
+    icon: "/Images/step1.svg",
     title: "Erat at semper ",
     description:
       "Non amet fermentum est in enim at sit ullamcorper. Sit elementum rhoncus nullam feugiat. Risus sem fermentum",
   },
   {
     index: 1,
-    icon: "/images/step2.svg",
+    icon: "/Images/step2.svg",
     title: "Urna nec vivamus risus duis arcu  ",
     description:
       "Aliquam adipiscing velit semper morbi. Purus non eu cursus porttitor tristique et gravida. Quis nunc interdum gravida ullamcorper",
   },
   {
     index: 2,
-    icon: "/images/step3.svg",
+    icon: "/Images/step3.svg",
     title: "Lobortis euismod imperdiet tempus ",
     description:
       "Viverra scelerisque mauris et nullam molestie et. Augue adipiscing praesent nisl cras nunc luctus viverra nisi",
   },
   {
     index: 3,
-    icon: "/images/step4.svg",
+    icon: "/Images/step4.svg",
     title: "Cras nulla aliquet nam eleifend amet et",
     description:
       "Aliquam adipiscing velit semper morbi. Purus non eu cursus porttitor tristique et gravida. Quis nunc interdum gravida ullamcorper sed integer. Quisque eleifend tincidunt vulputate libero ",
@@ -43,7 +43,7 @@ export default function StepsSection() {
     <div className="w-full grid grid-cols-2 gap-5 py-15">
       <div>
         <Image
-          src={"/images/steps.svg"}
+          src={"/Images/steps.svg"}
           alt="steps"
           width={550}
           height={550}

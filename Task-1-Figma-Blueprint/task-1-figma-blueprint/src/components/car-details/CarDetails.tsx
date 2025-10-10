@@ -14,37 +14,37 @@ const list = [
 const featuresList = [
   {
     index: 0,
-    imageUrl: "/images/details/feature-1.svg",
+    imageUrl: "/Images/details/feature-1.svg",
     title: "Gear Box",
     description: "Automat",
   },
   {
     index: 1,
-    imageUrl: "/images/details/feature-2.svg",
+    imageUrl: "/Images/details/feature-2.svg",
     title: "Fuel",
     description: "Petrol",
   },
   {
     index: 2,
-    imageUrl: "/images/details/feature-3.svg",
+    imageUrl: "/Images/details/feature-3.svg",
     title: "Doors",
     description: "2",
   },
   {
     index: 3,
-    imageUrl: "/images/details/feature-4.svg",
+    imageUrl: "/Images/details/feature-4.svg",
     title: "Air Conditioner",
     description: "Yes",
   },
   {
     index: 4,
-    imageUrl: "/images/details/feature-5.svg",
+    imageUrl: "/Images/details/feature-5.svg",
     title: "Seats",
     description: "5",
   },
   {
     index: 5,
-    imageUrl: "/images/details/feature-6.svg",
+    imageUrl: "/Images/details/feature-6.svg",
     title: "Distance",
     description: "500",
   },
@@ -62,7 +62,7 @@ export default function CarDetails() {
         </div>
         <Image
           alt="bmw"
-          src={"/images/bmw.svg"}
+          src={"/Images/bmw.svg"}
           height={310}
           width={650}
           priority
@@ -71,7 +71,7 @@ export default function CarDetails() {
         <div className="flex items-center justify-center gap-4">
           <Image
             alt="bmw"
-            src={"/images/img.svg"}
+            src={"/Images/img.svg"}
             height={100}
             width={140}
             priority
@@ -80,7 +80,7 @@ export default function CarDetails() {
 
           <Image
             alt="bmw"
-            src={"/images/img-1.svg"}
+            src={"/Images/img-1.svg"}
             height={100}
             width={140}
             priority
@@ -88,7 +88,7 @@ export default function CarDetails() {
           />
           <Image
             alt="bmw"
-            src={"/images/img-2.svg"}
+            src={"/Images/img-2.svg"}
             height={100}
             width={140}
             priority
@@ -142,7 +142,7 @@ export default function CarDetails() {
                 <li className="flex gap-4 items-center" key={index}>
                   <Image
                     alt="Check"
-                    src={"/images/details/check.svg"}
+                    src={"/Images/details/check.svg"}
                     height={24}
                     width={24}
                     priority

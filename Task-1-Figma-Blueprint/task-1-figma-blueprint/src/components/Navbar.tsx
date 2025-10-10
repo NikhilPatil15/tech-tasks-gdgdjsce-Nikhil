@@ -7,7 +7,7 @@ export default function Navbar() {
     <div className="w-full h-28 flex items-center justify-between">
       <div className="flex items-center justify-center">
         <Image
-          src="/images/Logo/Logo.svg"
+          src="/Images/Logo/Logo.svg"
           alt="Car rental logo"
           width={180}
           height={50}
@@ -39,7 +39,7 @@ export default function Navbar() {
         <div>
           {" "}
           <Image
-            src="/images/call.svg"
+            src="/Images/call.svg"
             alt="Car rental call "
             width={40}
             height={40}
