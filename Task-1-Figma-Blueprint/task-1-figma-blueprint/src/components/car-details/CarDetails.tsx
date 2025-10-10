@@ -71,7 +71,7 @@ export default function CarDetails() {
         <div className="flex items-center justify-center gap-4">
           <Image
             alt="bmw"
-            src={"/Images/img.svg"}
+            src={"/Images/Img.svg"}
             height={100}
             width={140}
             priority
@@ -80,7 +80,7 @@ export default function CarDetails() {
 
           <Image
             alt="bmw"
-            src={"/Images/img-1.svg"}
+            src={"/Images/Img-1.svg"}
             height={100}
             width={140}
             priority
@@ -88,7 +88,7 @@ export default function CarDetails() {
           />
           <Image
             alt="bmw"
-            src={"/Images/img-2.svg"}
+            src={"/Images/Img-2.svg"}
             height={100}
             width={140}
             priority

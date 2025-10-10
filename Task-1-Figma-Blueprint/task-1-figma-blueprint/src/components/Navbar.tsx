@@ -2,7 +2,28 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Navbar() {
-  const NavItems = ["Home", "Vehicles", "Details", "About Us", "Contact Us"];
+  const NavItems = [
+    {
+      title: "Home",
+      route: "/",
+    },
+    {
+      title: "Vehicles",
+      route: "/vehicles",
+    },
+    {
+      title: "Details",
+      route: "/car-details",
+    },
+    {
+      title: "About Us",
+      route: "/",
+    },
+    {
+      title: "Contact Us",
+      route: "/",
+    },
+  ];
   return (
     <div className="w-full h-28 flex items-center justify-between">
       <div className="flex items-center justify-center">
@@ -15,25 +36,21 @@ export default function Navbar() {
         />
       </div>
       <div className="flex items-center justify-center gap-8">
-        {NavItems.map((item: string, index: number) => {
-          return (
-            <Link
-              key={index}
-              href={
-                item === "Vehicles" || "Details"
-                  ? item === "Vehicles"
-                    ? "/vehicles"
-                    : "/car-details"
-                  : "/"
-              }
-              className={`text-center text-black  text-lg ${
-                item === "Vehicles" ? "font-bold" : "font-medium"
-              }`}
-            >
-              {item}
-            </Link>
-          );
-        })}
+        {NavItems.map(
+          (item: { title: string; route: string }, index: number) => {
+            return (
+              <Link
+                key={index}
+                href={item.route}
+                className={`text-center text-black  text-lg ${
+                  item.title === "Vehicles" ? "font-bold" : "font-medium"
+                }`}
+              >
+                {item.title}
+              </Link>
+            );
+          }
+        )}
       </div>
       <div className="flex items-center justify-center gap-2">
         <div>
