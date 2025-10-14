@@ -1,6 +1,6 @@
 # 🎨 GDG DJSCE – Tech Task 2 (Figma Design Replication using Next.js)
 
-This project is a **pixel-perfect replication** of the given Figma design created as part of the **Google Developer Students Club (GDSC) DJSCE Tech Task 2**.  
+This project is a **pixel-perfect replication** of the given Figma design created as part of the **Google Developer Students Club (GDSC) DJSCE Tech Task**.  
 The main objective of this task was to **recreate the provided Figma design exactly as shown**, focusing on maintaining perfect alignment, spacing, and styling — without making it responsive.
 
 ---

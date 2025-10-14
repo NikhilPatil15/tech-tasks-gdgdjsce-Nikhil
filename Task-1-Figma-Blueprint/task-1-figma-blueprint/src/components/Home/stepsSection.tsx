@@ -40,32 +40,40 @@ const steps: Step[] = [
 
 export default function StepsSection() {
   return (
-    <div className="w-full grid grid-cols-2 gap-5 py-15">
-      <div>
+    <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-5 py-8 lg:py-15">
+      <div className="flex justify-center lg:justify-start">
         <Image
           src={"/Images/steps.svg"}
           alt="steps"
           width={550}
           height={550}
           priority
+          className="w-full max-w-[400px] lg:max-w-[550px]"
         />
       </div>
-      <div className="flex items-start flex-col gap-6 py-7">
-        {steps.map((step: Step, _) => {
+      <div className="flex items-start flex-col gap-6 lg:gap-6 py-4 lg:py-7 px-4 lg:px-0">
+        {steps.map((step: Step) => {
           return (
-            <div key={step.index} className="flex items-start flex-col gap-5">
+            <div
+              key={step.index}
+              className="flex items-start flex-col gap-4 lg:gap-5"
+            >
               <div className="flex items-start gap-4">
                 <Image
                   src={step.icon}
                   alt={step.title}
-                  width={32}
-                  height={32}
+                  width={28}
+                  height={28}
+                  className="w-6 h-6 lg:w-8 lg:h-8 mt-1"
                   priority
                 />
-
-                <h1 className="font-semibold text-xl">{step.title}</h1>
+                <h1 className="font-semibold text-lg lg:text-xl leading-tight">
+                  {step.title}
+                </h1>
               </div>
-              <p className="text-[16px] text-[#00000099]">{step.description}</p>
+              <p className="text-[14px] lg:text-[16px] text-[#00000099] leading-relaxed">
+                {step.description}
+              </p>
             </div>
           );
         })}

@@ -6,6 +6,7 @@ type Feature = {
   title: string;
   description: string;
 };
+
 const featuresList: Feature[] = [
   {
     index: 0,
@@ -32,24 +33,25 @@ const featuresList: Feature[] = [
 
 export default function FeaturesSection() {
   return (
-    <div className="w-full max-h-[600px] flex items-center justify-between  py-15">
-      {featuresList.map((feature: Feature, _) => {
+    <div className="w-full flex flex-col sm:flex-row items-center justify-between gap-8 sm:gap-4 lg:gap-0 py-8 lg:py-15">
+      {featuresList.map((feature: Feature) => {
         return (
           <div
-            className="flex flex-col items-center justify-center gap-6 max-w-[350px] text-center"
+            className="flex flex-col items-center justify-center gap-4 lg:gap-6 max-w-full sm:max-w-[300px] lg:max-w-[350px] text-center px-4"
             key={feature.index}
           >
             <Image
               src={feature.icon}
               alt={feature.title}
-              width={64}
-              height={64}
+              width={56}
+              height={56}
+              className="w-12 h-12 lg:w-16 lg:h-16"
               priority
             />
-            <h2 className="text-[24px] leading-[100%] font-semibold">
+            <h2 className="text-[20px] lg:text-[24px] leading-[100%] font-semibold">
               {feature.title}
             </h2>
-            <p className="text-[16px] leading-6  text-black">
+            <p className="text-[14px] lg:text-[16px] leading-6 text-black">
               {feature.description}
             </p>
           </div>
